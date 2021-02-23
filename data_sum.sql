@@ -189,7 +189,7 @@ create table IF NOT EXISTS elec_aggregate.topic_cmd_030c_topic
     dTime         UInt64,
     collectTime   UInt64
 )
-    engine = Kafka('127.0.0.1:9092', 'cmd_030c_topic', 'clickhouse', 'JSONEachRow');
+    engine = Kafka('127.0.0.1:9092', 'cmd_030c_topic_remove', 'clickhouse', 'JSONEachRow');
 
 create table IF NOT EXISTS elec_aggregate.topic_cmd_030c_topic_store
 (
